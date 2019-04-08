@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -23,8 +24,8 @@
   color: #61dafb;
 }
 
-body {
-  background-color: #33c46a;
+.badge-primary {
+  background-color: #b11a21 !important;
 }
 
 @keyframes App-logo-spin {
@@ -33,5 +34,67 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.todo-container .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.todo-container hr {
+  margin: 1.5rem 0;
+}
+
+.todo-container .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.todo-container .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.todo-container .card-price .period {
+  font-size: 0.8rem;
+}
+
+.todo-container ul li {
+  margin-bottom: 1rem;
+}
+
+.todo-container .text-muted {
+  opacity: 0.7;
+}
+
+.todo-container .btn, .input {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  opacity: 0.7;
+  height: 30px;
+  transition: all 0.2s;
+}
+
+.input {
+  height: 30px;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .todo-container .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .todo-container .card:hover .btn {
+    opacity: 1;
   }
 }
